@@ -523,3 +523,59 @@ Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not 
 
 2014-03-20 17:41:05
 [WARN]-[Thread: qtp28524838-27]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/
+
+2014-03-20 22:26:18
+[WARN]-[Thread: qtp1766122814-27]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/new/
+
+2014-03-20 22:27:11
+[WARN]-[Thread: qtp690051320-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/new/
+
+2014-03-20 22:27:49
+[WARN]-[Thread: qtp1390430007-30]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/new/
+
+2014-03-20 22:28:48
+[WARN]-[Thread: qtp690051320-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/new/
+
+2014-03-20 22:29:06
+[ERROR]-[Thread: qtp690051320-29]-[com.jfinal.core.ActionHandler.handle()]: /project/add/
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/views/project/add.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/views/project/add.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 28 more
+
+2014-03-20 22:30:04
+[WARN]-[Thread: qtp1390430007-28]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/add/
+
+2014-03-20 22:30:17
+[WARN]-[Thread: qtp1390430007-29]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /project/add/

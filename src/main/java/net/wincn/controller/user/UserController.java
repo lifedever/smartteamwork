@@ -10,6 +10,7 @@ public class UserController extends Controller {
 	public void index(){
 		
 	}
+    
 	public void add() {
 		
 	}
