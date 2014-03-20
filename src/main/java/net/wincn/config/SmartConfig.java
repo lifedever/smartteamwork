@@ -3,6 +3,7 @@ package net.wincn.config;
 import net.wincn.handler.HtmlExtensionHandler;
 import net.wincn.model.User;
 import net.wincn.route.FrontRoute;
+import net.wincn.route.UserRoute;
 
 import org.apache.log4j.Logger;
 
@@ -43,6 +44,7 @@ public class SmartConfig extends JFinalConfig {
 	@Override
 	public void configRoute(Routes me) {
 		me.add(new FrontRoute());
+		me.add(new UserRoute());
 	}
 
 	@Override

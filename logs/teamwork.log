@@ -202,3 +202,324 @@ Caused by: java.io.FileNotFoundException: Template WEB-INF/views/layout/layout/a
 	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
 	at freemarker.core.Include.accept(Include.java:143)
 	... 37 more
+
+2014-03-20 15:18:28
+[ERROR]-[Thread: main]-[org.apache.shiro.web.env.EnvironmentLoader.initEnvironment()]: Shiro environment initialization failed
+org.apache.shiro.config.ConfigurationException: Unable to instantiate class [com.myweb.ext.shiro.MyShiroRealm] for object named 'myRealm'.  Please ensure you've specified the fully qualified class name correctly.
+	at org.apache.shiro.config.ReflectionBuilder.createNewInstance(ReflectionBuilder.java:148)
+	at org.apache.shiro.config.ReflectionBuilder.buildObjects(ReflectionBuilder.java:119)
+	at org.apache.shiro.config.IniSecurityManagerFactory.buildInstances(IniSecurityManagerFactory.java:170)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:119)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:97)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:83)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:41)
+	at org.apache.shiro.config.IniFactorySupport.createInstance(IniFactorySupport.java:123)
+	at org.apache.shiro.util.AbstractFactory.getInstance(AbstractFactory.java:47)
+	at org.apache.shiro.web.env.IniWebEnvironment.createWebSecurityManager(IniWebEnvironment.java:203)
+	at org.apache.shiro.web.env.IniWebEnvironment.configure(IniWebEnvironment.java:99)
+	at org.apache.shiro.web.env.IniWebEnvironment.init(IniWebEnvironment.java:92)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:45)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:40)
+	at org.apache.shiro.web.env.EnvironmentLoader.createEnvironment(EnvironmentLoader.java:221)
+	at org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:133)
+	at org.apache.shiro.web.env.EnvironmentLoaderListener.contextInitialized(EnvironmentLoaderListener.java:58)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.apache.shiro.util.UnknownClassException: Unable to load class named [com.myweb.ext.shiro.MyShiroRealm] from the thread context, current, or system/application ClassLoaders.  All heuristics have been exhausted.  Class could not be found.
+	at org.apache.shiro.util.ClassUtils.forName(ClassUtils.java:148)
+	at org.apache.shiro.util.ClassUtils.newInstance(ClassUtils.java:164)
+	at org.apache.shiro.config.ReflectionBuilder.createNewInstance(ReflectionBuilder.java:141)
+	... 26 more
+
+2014-03-20 15:42:30
+[WARN]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/add
+
+2014-03-20 15:43:10
+[WARN]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/add
+
+2014-03-20 15:43:19
+[WARN]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/add
+
+2014-03-20 15:43:29
+[WARN]-[Thread: qtp7634850-26]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/add
+
+2014-03-20 15:44:50
+[WARN]-[Thread: qtp7634850-29]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/add
+
+2014-03-20 16:43:35
+[ERROR]-[Thread: main]-[org.apache.shiro.web.env.EnvironmentLoader.initEnvironment()]: Shiro environment initialization failed
+org.apache.shiro.config.ConfigurationException: Unable to instantiate class [com.myweb.ext.shiro.MyShiroRealm] for object named 'myRealm'.  Please ensure you've specified the fully qualified class name correctly.
+	at org.apache.shiro.config.ReflectionBuilder.createNewInstance(ReflectionBuilder.java:151)
+	at org.apache.shiro.config.ReflectionBuilder.buildObjects(ReflectionBuilder.java:119)
+	at org.apache.shiro.config.IniSecurityManagerFactory.buildInstances(IniSecurityManagerFactory.java:161)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:124)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:102)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:88)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:46)
+	at org.apache.shiro.config.IniFactorySupport.createInstance(IniFactorySupport.java:123)
+	at org.apache.shiro.util.AbstractFactory.getInstance(AbstractFactory.java:47)
+	at org.apache.shiro.web.env.IniWebEnvironment.createWebSecurityManager(IniWebEnvironment.java:203)
+	at org.apache.shiro.web.env.IniWebEnvironment.configure(IniWebEnvironment.java:99)
+	at org.apache.shiro.web.env.IniWebEnvironment.init(IniWebEnvironment.java:92)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:45)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:40)
+	at org.apache.shiro.web.env.EnvironmentLoader.createEnvironment(EnvironmentLoader.java:221)
+	at org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:133)
+	at org.apache.shiro.web.env.EnvironmentLoaderListener.contextInitialized(EnvironmentLoaderListener.java:58)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.apache.shiro.util.UnknownClassException: Unable to load class named [com.myweb.ext.shiro.MyShiroRealm] from the thread context, current, or system/application ClassLoaders.  All heuristics have been exhausted.  Class could not be found.
+	at org.apache.shiro.util.ClassUtils.forName(ClassUtils.java:148)
+	at org.apache.shiro.util.ClassUtils.newInstance(ClassUtils.java:164)
+	at org.apache.shiro.config.ReflectionBuilder.createNewInstance(ReflectionBuilder.java:144)
+	... 26 more
+
+2014-03-20 16:44:16
+[ERROR]-[Thread: main]-[org.apache.shiro.web.env.EnvironmentLoader.initEnvironment()]: Shiro environment initialization failed
+java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory
+	at org.apache.commons.beanutils.ConvertUtilsBean.<init>(ConvertUtilsBean.java:157)
+	at org.apache.commons.beanutils.BeanUtilsBean.<init>(BeanUtilsBean.java:117)
+	at org.apache.commons.beanutils.BeanUtilsBean$1.initialValue(BeanUtilsBean.java:68)
+	at org.apache.commons.beanutils.ContextClassLoaderLocal.get(ContextClassLoaderLocal.java:153)
+	at org.apache.commons.beanutils.BeanUtilsBean.getInstance(BeanUtilsBean.java:80)
+	at org.apache.commons.beanutils.PropertyUtilsBean.getInstance(PropertyUtilsBean.java:114)
+	at org.apache.commons.beanutils.PropertyUtils.getPropertyDescriptor(PropertyUtils.java:460)
+	at org.apache.shiro.config.ReflectionBuilder.isTypedProperty(ReflectionBuilder.java:251)
+	at org.apache.shiro.config.ReflectionBuilder.applyProperty(ReflectionBuilder.java:544)
+	at org.apache.shiro.config.ReflectionBuilder.applySingleProperty(ReflectionBuilder.java:206)
+	at org.apache.shiro.config.ReflectionBuilder.applyProperty(ReflectionBuilder.java:167)
+	at org.apache.shiro.config.ReflectionBuilder.buildObjects(ReflectionBuilder.java:124)
+	at org.apache.shiro.config.IniSecurityManagerFactory.buildInstances(IniSecurityManagerFactory.java:161)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:124)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createSecurityManager(IniSecurityManagerFactory.java:102)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:88)
+	at org.apache.shiro.config.IniSecurityManagerFactory.createInstance(IniSecurityManagerFactory.java:46)
+	at org.apache.shiro.config.IniFactorySupport.createInstance(IniFactorySupport.java:123)
+	at org.apache.shiro.util.AbstractFactory.getInstance(AbstractFactory.java:47)
+	at org.apache.shiro.web.env.IniWebEnvironment.createWebSecurityManager(IniWebEnvironment.java:203)
+	at org.apache.shiro.web.env.IniWebEnvironment.configure(IniWebEnvironment.java:99)
+	at org.apache.shiro.web.env.IniWebEnvironment.init(IniWebEnvironment.java:92)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:45)
+	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:40)
+	at org.apache.shiro.web.env.EnvironmentLoader.createEnvironment(EnvironmentLoader.java:221)
+	at org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:133)
+	at org.apache.shiro.web.env.EnvironmentLoaderListener.contextInitialized(EnvironmentLoaderListener.java:58)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.logging.LogFactory
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:415)
+	at runjettyrun.ProjectClassLoader.loadClass(ProjectClassLoader.java:88)
+	... 37 more
+
+2014-03-20 17:37:46
+[ERROR]-[Thread: qtp6783657-27]-[com.jfinal.core.ActionHandler.handle()]: /user/add
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-20 17:37:59
+[WARN]-[Thread: qtp6783657-25]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/
+
+2014-03-20 17:38:35
+[ERROR]-[Thread: qtp6783657-28]-[com.jfinal.core.ActionHandler.handle()]: /user/add
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-20 17:38:53
+[ERROR]-[Thread: qtp6783657-26]-[com.jfinal.core.ActionHandler.handle()]: /user/add
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-20 17:39:07
+[ERROR]-[Thread: qtp6783657-29]-[com.jfinal.core.ActionHandler.handle()]: /user/add
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-20 17:39:31
+[ERROR]-[Thread: qtp6783657-29]-[com.jfinal.core.ActionHandler.handle()]: /user/add
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/view/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-20 17:41:05
+[WARN]-[Thread: qtp28524838-27]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /user/
