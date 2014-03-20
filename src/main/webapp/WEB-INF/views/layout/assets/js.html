@@ -3,7 +3,7 @@
 <script type="text/javascript">
 	(function(){
 		$searchInp = $('#searchInp');
-		$searchInp.val == ''?$searchInp.css('width', '100px'):$searchInp.css('width', '200px');
+		$searchInp.val() == ''?$searchInp.css('width', '100px'):$searchInp.css('width', '200px');
 		$searchInp.on('focus', function(){
 			$this = $(this);
 			$this.animate({ 
