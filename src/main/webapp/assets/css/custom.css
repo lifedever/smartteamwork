@@ -1,12 +1,22 @@
+body {
+	padding-top: 70px;
+}
+
 text.center {
 	text-align: center;
 }
+
+/* margin */
 .margin100-t {
 	margin-top: 100px;
+}
+
+.margin30-b {
+	margin-bottom: 30px;
 }
 .margin10-b {
 	margin-bottom: 10px;
 }
-.margin30-b {
-	margin-bottom: 30px;
+.margin10-r {
+	margin-right: 10px;
 }
