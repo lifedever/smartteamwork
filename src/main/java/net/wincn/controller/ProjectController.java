@@ -1,4 +1,4 @@
-package net.wincn.controller.user;
+package net.wincn.controller;
 
 import net.wincn.interceptor.SessionInterceptor;
 

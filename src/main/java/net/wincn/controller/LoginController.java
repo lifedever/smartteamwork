@@ -1,4 +1,4 @@
-package net.wincn.controller.user;
+package net.wincn.controller;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import net.wincn.interceptor.SessionInterceptor;
 import net.wincn.model.User;
+import net.wincn.validator.LoginValidator;
 
 import com.jfinal.aop.Before;
 import com.jfinal.aop.ClearInterceptor;
@@ -73,16 +74,17 @@ public class LoginController extends Controller {
 		renderFreeMarker("/WEB-INF/views/signup.html");
 	}
 
+	@Before(LoginValidator.class)
 	@ActionKey("register")
 	@ClearInterceptor(ClearLayer.ALL)
 	public void regediter() {
 		User user = getModel(User.class);
 		if (User.dao.findFirst("select * from user where username = ?", user.getStr("username")) != null) {
-			setAttr("error", "用户已被注册！");
-			redirect("/signup");
+			setAttr("errors", "用户已被注册！");
+			render("/WEB-INF/views/signup.html");
 		} else {
 			setAttr("success", "用户注册成功！");
-			redirect("/signin");
+			render("/WEB-INF/views/signin.html");
 		}
 	}
 }

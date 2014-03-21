@@ -48,8 +48,15 @@
 </nav>
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<div class="alert alert-danger">${error!""}</div>
-		</div>
+		<#if errors?exists>
+			<div class="col-md-12">
+				<div class="alert alert-danger">${errors!""}</div>
+			</div>
+		</#if>
+		<#if success?exists>
+			<div class="col-md-12">
+				<div class="alert alert-success">${success!""}</div>
+			</div>
+		</#if>
 	</div>
 </div>

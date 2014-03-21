@@ -1,8 +1,8 @@
 package net.wincn.route;
 
-import net.wincn.controller.user.LoginController;
-import net.wincn.controller.user.ProjectController;
-import net.wincn.controller.user.UserController;
+import net.wincn.controller.LoginController;
+import net.wincn.controller.ProjectController;
+import net.wincn.controller.UserController;
 
 import com.jfinal.config.Routes;
 
