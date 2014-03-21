@@ -1113,3 +1113,2438 @@ Caused by: java.io.FileNotFoundException: Template /WEB-INF/views/project/add.ht
 	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
 	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
 	... 26 more
+
+2014-03-21 10:40:20
+[ERROR]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.getServletContext()Ljavax/servlet/ServletContext;
+	at net.wincn.controller.IndexController.index(IndexController.java:14)
+	... 31 more
+
+2014-03-21 10:41:49
+[ERROR]-[Thread: qtp7634850-26]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.getServletContext()Ljavax/servlet/ServletContext;
+	at net.wincn.controller.IndexController.index(IndexController.java:14)
+	... 31 more
+
+2014-03-21 10:43:50
+[ERROR]-[Thread: qtp7634850-24]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.getServletContext()Ljavax/servlet/ServletContext;
+	at net.wincn.controller.IndexController.index(IndexController.java:14)
+	... 31 more
+
+2014-03-21 10:43:56
+[ERROR]-[Thread: qtp7634850-24]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Error reading included file WEB-INF/views/layout/header
+The problematic instruction:
+----------
+==> include "layout/header" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.TemplateException: Error reading included file WEB-INF/views/layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template WEB-INF/views/layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:43:56
+[ERROR]-[Thread: qtp7634850-24]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.template.TemplateException: Error reading included file WEB-INF/views/layout/header
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.template.TemplateException: Error reading included file WEB-INF/views/layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+Caused by: java.io.FileNotFoundException: Template WEB-INF/views/layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:44:21
+[ERROR]-[Thread: qtp7634850-27]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Error reading included file layout/header
+The problematic instruction:
+----------
+==> include "/layout/header" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:44:21
+[ERROR]-[Thread: qtp7634850-27]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.template.TemplateException: Error reading included file layout/header
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:45:39
+[ERROR]-[Thread: qtp7634850-24]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Error reading included file layout/header
+The problematic instruction:
+----------
+==> include "/layout/header" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:45:39
+[ERROR]-[Thread: qtp7634850-24]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.template.TemplateException: Error reading included file layout/header
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:45:43
+[ERROR]-[Thread: qtp7634850-25]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Error reading included file layout/header
+The problematic instruction:
+----------
+==> include "/layout/header" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:45:43
+[ERROR]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.template.TemplateException: Error reading included file layout/header
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:46:04
+[ERROR]-[Thread: qtp18433730-29]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Error reading included file layout/header
+The problematic instruction:
+----------
+==> include "/layout/header" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:46:04
+[ERROR]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.template.TemplateException: Error reading included file layout/header
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.template.TemplateException: Error reading included file layout/header
+	at freemarker.core.Include.accept(Include.java:153)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+Caused by: java.io.FileNotFoundException: Template layout/header not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1357)
+	at freemarker.core.Include.accept(Include.java:143)
+	... 32 more
+
+2014-03-21 10:46:11
+[ERROR]-[Thread: qtp18433730-29]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression site is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${site.title} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression site is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:46:11
+[ERROR]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression site is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression site is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 10:46:32
+[ERROR]-[Thread: qtp18433730-25]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${siteTitle} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:46:32
+[ERROR]-[Thread: qtp18433730-25]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 10:49:58
+[ERROR]-[Thread: qtp18433730-28]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${siteTitle} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:49:58
+[ERROR]-[Thread: qtp18433730-28]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 10:56:08
+[ERROR]-[Thread: qtp18433730-26]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.getServletContext()Ljavax/servlet/ServletContext;
+	at net.wincn.controller.IndexController.index(IndexController.java:14)
+	... 31 more
+
+2014-03-21 10:57:47
+[ERROR]-[Thread: qtp18433730-27]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${Session.siteTitle!""} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:57:47
+[ERROR]-[Thread: qtp18433730-27]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 10:58:10
+[ERROR]-[Thread: qtp18433730-24]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${session.siteTitle!""} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:58:10
+[ERROR]-[Thread: qtp18433730-24]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 10:58:52
+[ERROR]-[Thread: qtp18433730-24]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${Session.siteTitle!"default value"} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 10:58:52
+[ERROR]-[Thread: qtp18433730-24]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.DefaultToExpression._getAsTemplateModel(DefaultToExpression.java:100)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:00:32
+[ERROR]-[Thread: qtp18433730-29]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${Session} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:00:32
+[ERROR]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:00:45
+[ERROR]-[Thread: qtp18433730-26]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression sess is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${sess} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression sess is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:00:45
+[ERROR]-[Thread: qtp18433730-26]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression sess is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression sess is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:02:54
+[ERROR]-[Thread: qtp18433730-29]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${Session["siteTitle"]} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.DynamicKeyName._getAsTemplateModel(DynamicKeyName.java:75)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:02:54
+[ERROR]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression Session is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.DynamicKeyName._getAsTemplateModel(DynamicKeyName.java:75)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:03:35
+[ERROR]-[Thread: qtp18433730-25]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${siteTitle} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:03:35
+[ERROR]-[Thread: qtp18433730-25]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:16:59
+[ERROR]-[Thread: qtp7634850-26]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+The problematic instruction:
+----------
+==> ${siteTitle} [on line 4, column 16 in WEB-INF/views/layout/header.html]
+ in include "layout/header.html" [on line 3, column 1 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:16:59
+[ERROR]-[Thread: qtp7634850-26]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression siteTitle is undefined on line 4, column 18 in WEB-INF/views/layout/header.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:23:30
+[ERROR]-[Thread: qtp18433730-25]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.Exception: ddddd
+	at net.wincn.controller.IndexController.index(IndexController.java:8)
+	... 31 more
+
+2014-03-21 11:26:56
+[ERROR]-[Thread: qtp18433730-26]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.Exception: ddddd
+	at net.wincn.controller.IndexController.index(IndexController.java:8)
+	... 31 more
+
+2014-03-21 11:27:29
+[ERROR]-[Thread: qtp7634850-25]-[com.jfinal.core.ActionHandler.handle()]: /
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	... 26 more
+Caused by: java.lang.Exception: ddddd
+	at net.wincn.controller.IndexController.index(IndexController.java:8)
+	... 31 more
+
+2014-03-21 11:27:52
+[ERROR]-[Thread: qtp7634850-24]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+The problematic instruction:
+----------
+==> if user = null [on line 26, column 33 in WEB-INF/views/layout/nav.html]
+ in include "layout/nav.html" [on line 5, column 9 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:27:52
+[ERROR]-[Thread: qtp7634850-24]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:28:00
+[ERROR]-[Thread: qtp7634850-28]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+The problematic instruction:
+----------
+==> if user = null [on line 26, column 33 in WEB-INF/views/layout/nav.html]
+ in include "layout/nav.html" [on line 5, column 9 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:28:00
+[ERROR]-[Thread: qtp7634850-28]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:28:46
+[ERROR]-[Thread: qtp7634850-27]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+The problematic instruction:
+----------
+==> if user == null [on line 26, column 33 in WEB-INF/views/layout/nav.html]
+ in include "layout/nav.html" [on line 5, column 9 in WEB-INF/views/index.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 11:28:46
+[ERROR]-[Thread: qtp7634850-27]-[com.jfinal.core.ActionHandler.handle()]: /
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.HtmlExtensionHandler.handle(HtmlExtensionHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression user is undefined on line 26, column 38 in WEB-INF/views/layout/nav.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.ComparisonExpression.isTrue(ComparisonExpression.java:121)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:77)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.include(Environment.java:1375)
+	at freemarker.core.Include.accept(Include.java:155)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 11:49:53
+[ERROR]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: /login
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/views/login/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/views/login/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-21 11:50:25
+[ERROR]-[Thread: qtp18433730-25]-[com.jfinal.core.ActionHandler.handle()]: /login
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template /WEB-INF/views/login/login.html not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: Template /WEB-INF/views/login/login.html not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:489)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:124)
+	... 26 more
+
+2014-03-21 12:21:47
+[ERROR]-[Thread: qtp18433730-27]-[freemarker.log.Log4JLoggerFactory$Log4JLogger.error()]: 
+
+Expression from is undefined on line 13, column 82 in WEB-INF/views/login.html.
+The problematic instruction:
+----------
+==> ${from} [on line 13, column 80 in WEB-INF/views/login.html]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression from is undefined on line 13, column 82 in WEB-INF/views/login.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-21 12:21:47
+[ERROR]-[Thread: qtp18433730-27]-[com.jfinal.core.ActionHandler.handle()]: /signin
+com.jfinal.render.RenderException: freemarker.core.InvalidReferenceException: Expression from is undefined on line 13, column 82 in WEB-INF/views/login.html.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:128)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:92)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core.InvalidReferenceException: Expression from is undefined on line 13, column 82 in WEB-INF/views/login.html.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:126)
+	... 26 more
+
+2014-03-21 12:23:03
+[ERROR]-[Thread: qtp18433730-26]-[com.jfinal.core.ActionHandler.handle()]: /login/
+java.lang.NullPointerException
+	at java.net.URLDecoder.decode(Unknown Source)
+	at java.net.URLDecoder.decode(Unknown Source)
+	at net.wincn.controller.user.LoginController.login(LoginController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:28)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)

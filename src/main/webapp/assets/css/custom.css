@@ -14,9 +14,23 @@ text.center {
 .margin30-b {
 	margin-bottom: 30px;
 }
+
+.margin20-r {
+	margin-right: 20px;
+}
+
+.margin20-l {
+	margin-right: 20px;
+}
+
 .margin10-b {
 	margin-bottom: 10px;
 }
+
+.margin10-t {
+	margin-top: 10px;
+}
+
 .margin10-r {
 	margin-right: 10px;
 }

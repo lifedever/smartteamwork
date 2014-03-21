@@ -16,5 +16,5 @@ public class FrontRoute extends Routes {
     public void config() {
         add("/", IndexController.class);
     }
-
+    
 }

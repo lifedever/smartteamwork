@@ -1,6 +1,6 @@
 package net.wincn.config;
 
-import net.wincn.handler.HtmlExtensionHandler;
+import net.wincn.handler.SmartHandler;
 import net.wincn.model.User;
 import net.wincn.route.FrontRoute;
 import net.wincn.route.UserRoute;
@@ -39,11 +39,21 @@ public class SmartConfig extends JFinalConfig {
 		me.setError500View("/500.html");
 		// 开启debug模式
 		me.setDevMode(true);
+
+	}
+
+	/**
+	 * 站点配置信息
+	 */
+	private void siteConfig() {
+		
+		SiteConfig.NAME = getProperty("site.name");
+		SiteConfig.TITLE = getProperty("site.title");
 	}
 
 	@Override
 	public void configRoute(Routes me) {
-		
+
 		me.add(new FrontRoute());
 		me.add(new UserRoute());
 	}
@@ -72,10 +82,14 @@ public class SmartConfig extends JFinalConfig {
 	public void configInterceptor(Interceptors me) {
 
 	}
-
+	
+	@Override
+	public void afterJFinalStart() {
+		siteConfig();
+	}
 	@Override
 	public void configHandler(Handlers me) {
-		me.add(new HtmlExtensionHandler());
+		me.add(new SmartHandler());
 	}
 
 }

@@ -6,27 +6,40 @@
 				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Team Work</a>
+			<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-thumbs-up"></span>${siteName}</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav ">
-				<li class="active"><a href="#">Link</a></li>
+				<li class="active"><a href="/">首页</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Action</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Separated link</a></li>
-					</ul></li>
+					</ul>
+				</li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">登录</a></li>
+				<#if user?exists>
+					<li class="dropdown">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">${user.username} <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="#">我的主页</a></li>
+				          <li class="divider"></li>
+				          <li><a href="/signout">退出</a></li>
+				        </ul>
+					</li>
+				<#else>
+					<li><a href="/signin">登录</a></li>
+				</#if>
+				
 			</ul>
 			<form class="navbar-form navbar-right" role="search">
-				<div class="form-group input-group">
-					<input type="text" class="form-control search-query" placeholder="项目查询" id="searchInp">
+				<div class="form-group input-group  margin20-l">
+					<input type="text" class="form-control search-query " style="border-radius: 15px;" placeholder="项目查询" id="searchInp">
 				</div>
 			</form>
 
