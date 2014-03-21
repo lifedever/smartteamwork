@@ -18,15 +18,21 @@ import com.jfinal.core.Controller;
 @Before(SessionInterceptor.class)
 public class LoginController extends Controller {
 
+	/**
+	 * 登录页面
+	 */
 	@ClearInterceptor(ClearLayer.ALL)
 	@ActionKey("signin")
 	public void signin() {
 		String url = getPara(0);
 
 		setAttr("from", url);
-		renderFreeMarker("/WEB-INF/views/login.html");
+		renderFreeMarker("/WEB-INF/views/signin.html");
 	}
 
+	/**
+	 * 用户登录
+	 */
 	@ClearInterceptor(ClearLayer.ALL)
 	@ActionKey("login")
 	public void login() {
@@ -46,6 +52,9 @@ public class LoginController extends Controller {
 		}
 	}
 
+	/**
+	 * 退出页面
+	 */
 	@ActionKey("signout")
 	public void loginout() {
 		Enumeration<String> names = getSession().getAttributeNames();
@@ -53,5 +62,27 @@ public class LoginController extends Controller {
 			removeSessionAttr(names.nextElement());
 		}
 		redirect("/signin");
+	}
+
+	/**
+	 * 用户注册页面
+	 */
+	@ActionKey("signup")
+	@ClearInterceptor(ClearLayer.ALL)
+	public void signup() {
+		renderFreeMarker("/WEB-INF/views/signup.html");
+	}
+
+	@ActionKey("register")
+	@ClearInterceptor(ClearLayer.ALL)
+	public void regediter() {
+		User user = getModel(User.class);
+		if (User.dao.findFirst("select * from user where username = ?", user.getStr("username")) != null) {
+			setAttr("error", "用户已被注册！");
+			redirect("/signup");
+		} else {
+			setAttr("success", "用户注册成功！");
+			redirect("/signin");
+		}
 	}
 }

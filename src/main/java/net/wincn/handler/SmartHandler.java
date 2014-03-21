@@ -24,7 +24,6 @@ public class SmartHandler extends Handler {
 		if(user != null){
 			request.setAttribute("user", user);
 		}
-		
 		nextHandler.handle(target, request, response, isHandled);
 	}
 }

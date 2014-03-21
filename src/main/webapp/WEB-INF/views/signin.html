@@ -4,13 +4,14 @@
 <body>
 	<#include "layout/nav.html" />
 	<div class="container">
-		<div class="row margin100-t">
+		<div class="row margin50-t">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
 				<h1 class="text-center margin30-b">
-					<span class="glyphicon glyphicon-home"></span> 团队协作系统
+					${siteTitle!""}
 				</h1>
-				<form role="form" method="post" action="/login/${from!""}">
+				<form role="form" method="post" action="/login/${from!''}">
+					<legend><span class="glyphicon glyphicon-user"></span> 用户登录</legend>
 					<div class="form-group">
 						<input type="text" class="form-control" id="username" name="user.username" placeholder="输入用户名">
 					</div>
@@ -24,7 +25,7 @@
 						</label>
 					</div>
 					<div class=" pull-right margin10-t">
-						<a href="dddd">注册账号</a>
+						<a href="/signup">注册账号</a>
 					</div>
 				</form>
 
