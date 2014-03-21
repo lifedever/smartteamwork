@@ -3,7 +3,6 @@ package net.wincn.controller.user;
 import net.wincn.interceptor.SessionInterceptor;
 
 import com.jfinal.aop.Before;
-import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 
 /**
@@ -12,8 +11,7 @@ import com.jfinal.core.Controller;
 @Before(SessionInterceptor.class)
 public class ProjectController extends Controller {
 
-	@ActionKey("add")
-	public void addProject() {
+	public void add() {
 
 	}
 }

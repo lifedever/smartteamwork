@@ -43,6 +43,7 @@ public class SmartConfig extends JFinalConfig {
 
 	@Override
 	public void configRoute(Routes me) {
+		
 		me.add(new FrontRoute());
 		me.add(new UserRoute());
 	}

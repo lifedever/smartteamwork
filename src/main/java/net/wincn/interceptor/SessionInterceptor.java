@@ -9,7 +9,7 @@ public class SessionInterceptor implements Interceptor {
 	public void intercept(ActionInvocation ai) {
 		Object user = ai.getController().getSessionAttr("sessionUser");
 		if (user == null) {
-			ai.getController().render("/WEB-INF/views/login.html");
+			ai.getController().redirect("/signin");
 		}else{
 			ai.invoke();
 		}

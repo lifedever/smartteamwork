@@ -1,16 +1,17 @@
 package net.wincn.route;
 
+import net.wincn.controller.user.LoginController;
 import net.wincn.controller.user.ProjectController;
 import net.wincn.controller.user.UserController;
 
 import com.jfinal.config.Routes;
 
-public class UserRoute extends Routes{
+public class UserRoute extends Routes {
 
 	@Override
 	public void config() {
 		add("/user", UserController.class, "user");
-        add("/project", ProjectController.class, "project");
+		add("/project", ProjectController.class, "project");
+		add("/login", LoginController.class);
 	}
-
 }

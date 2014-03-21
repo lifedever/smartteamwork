@@ -12,4 +12,7 @@ public class User extends Model<User> {
 
 	private static final long serialVersionUID = -6114272070879297089L;
 	public static final User dao = new User();
+
+	public static final String USERNAME = "username";
+	public static final String PASSWORD = "password";
 }
