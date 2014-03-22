@@ -1,4 +1,4 @@
-package net.wincn.validator;
+package net.wincn.support.validator;
 
 import com.jfinal.core.Controller;
 import com.jfinal.validate.Validator;

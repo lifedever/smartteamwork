@@ -1,4 +1,4 @@
-package net.wincn.realm;
+package net.wincn.support.realm;
 
 import java.util.Arrays;
 import java.util.List;

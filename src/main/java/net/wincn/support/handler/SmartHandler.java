@@ -1,4 +1,4 @@
-package net.wincn.handler;
+package net.wincn.support.handler;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

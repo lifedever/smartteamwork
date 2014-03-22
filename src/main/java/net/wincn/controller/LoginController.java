@@ -1,7 +1,7 @@
 package net.wincn.controller;
 
 import net.wincn.model.User;
-import net.wincn.validator.LoginValidator;
+import net.wincn.support.validator.LoginValidator;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;

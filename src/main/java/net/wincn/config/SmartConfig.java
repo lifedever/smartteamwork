@@ -1,10 +1,10 @@
 package net.wincn.config;
 
-import net.wincn.handler.SmartHandler;
 import net.wincn.model.Role;
 import net.wincn.model.User;
 import net.wincn.route.FrontRoute;
 import net.wincn.route.UserRoute;
+import net.wincn.support.handler.SmartHandler;
 
 import org.apache.log4j.Logger;
 
