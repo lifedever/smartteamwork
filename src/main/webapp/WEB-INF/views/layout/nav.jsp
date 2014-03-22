@@ -20,7 +20,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<shiro:user>
 					<li class="dropdown">
-				        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <shiro:principal /><b class="caret"></b></a>
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 
+				        	<user:user property="realname"/><b class="caret"></b></a>
 				        <ul class="dropdown-menu">
 				          <li><a href="#">我的主页</a></li>
 				          <li class="divider"></li>

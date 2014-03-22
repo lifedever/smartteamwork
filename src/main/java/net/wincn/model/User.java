@@ -26,4 +26,5 @@ public class User extends Model<User> {
 		return Role.dao.find("select r.* from roles r join user_roles ur on r.id = ur.role_id where ur.user_id = ?",
 				get("id"));
 	}
+	
 }
