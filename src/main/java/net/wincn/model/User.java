@@ -15,4 +15,8 @@ public class User extends Model<User> {
 
 	public static final String USERNAME = "username";
 	public static final String PASSWORD = "password";
+
+	public static User findUserByUsername(String username) {
+		return dao.findFirst("select * from user where username = ?", username);
+	}
 }

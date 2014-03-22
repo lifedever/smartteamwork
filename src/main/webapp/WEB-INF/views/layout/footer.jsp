@@ -1,4 +1,5 @@
-<#include "assets/js.html"/>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<jsp:include page="assets/js.jsp"></jsp:include>
 <footer class="margin10-t">
 	<div class="container">
 		<div class="row">

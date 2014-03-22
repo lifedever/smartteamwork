@@ -35,6 +35,15 @@ text.center {
 	margin-top: 10px;
 }
 
+.margin10-l {
+	margin-left: 10px;
+}
+
+.margin10-lr {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .margin10-r {
 	margin-right: 10px;
 }

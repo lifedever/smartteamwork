@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/tags.jsp" %>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -12,33 +14,27 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav ">
 				<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
+				<li><a href="/project/">项目管理</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<#if user?exists>
+				<shiro:user>
 					<li class="dropdown">
-				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">${user.username} <b class="caret"></b></a>
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <shiro:principal /><b class="caret"></b></a>
 				        <ul class="dropdown-menu">
 				          <li><a href="#">我的主页</a></li>
 				          <li class="divider"></li>
 				          <li><a href="/signout">退出</a></li>
 				        </ul>
 					</li>
-				<#else>
+				</shiro:user>
+				<shiro:guest>
 					<li><a href="/signin">登录</a></li>
 					<li><a href="/signup">注册</a></li>
-				</#if>
-				
+				</shiro:guest>
 			</ul>
 			<form class="navbar-form navbar-right" role="search">
-				<div class="form-group input-group  margin20-l">
+				<div class="form-group input-group margin10-lr">
 					<input type="text" class="form-control search-query " style="border-radius: 15px;" placeholder="项目查询" id="searchInp">
 				</div>
 			</form>
@@ -46,17 +42,3 @@
 		</div>
 	</div>
 </nav>
-<div class="container">
-	<div class="row">
-		<#if errors?exists>
-			<div class="col-md-12">
-				<div class="alert alert-danger">${errors!""}</div>
-			</div>
-		</#if>
-		<#if success?exists>
-			<div class="col-md-12">
-				<div class="alert alert-success">${success!""}</div>
-			</div>
-		</#if>
-	</div>
-</div>

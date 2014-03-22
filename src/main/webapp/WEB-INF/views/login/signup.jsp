@@ -1,14 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<#include "layout/header.html" />
+<jsp:include page="../layout/header.jsp"></jsp:include>
 <body>
-	<#include "layout/nav.html" />
+	<jsp:include page="../layout/nav.jsp"></jsp:include>
 	<div class="container">
 		<div class="row margin50-t">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
 				<h1 class="text-center margin30-b">
-					${siteTitle!""}
+					${siteTitle}
 				</h1>
 				<form role="form" method="post" action="/register">
 					<legend><span class="glyphicon glyphicon-user"></span> 用户注册</legend>
@@ -35,7 +36,7 @@
 			</div>
 
 		</div>
-		<#include "layout/footer.html" />
+		<jsp:include page="../layout/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

@@ -65,11 +65,6 @@
 			<version>1.7.6</version>
 		</dependency>
 		<dependency>
-			<groupId>freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.9</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.1</version>
@@ -84,11 +79,16 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-all</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
 			<groupId>com.jfinal</groupId>
 			<artifactId>jfinal-ext</artifactId>
 			<version>3.1.0</version>
-		</dependency> -->
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>

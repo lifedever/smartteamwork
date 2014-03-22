@@ -1,14 +1,12 @@
 package net.wincn.controller;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.util.Enumeration;
-
-import org.apache.commons.lang3.StringUtils;
-
-import net.wincn.interceptor.SessionInterceptor;
 import net.wincn.model.User;
 import net.wincn.validator.LoginValidator;
+
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.util.WebUtils;
 
 import com.jfinal.aop.Before;
 import com.jfinal.aop.ClearInterceptor;
@@ -16,7 +14,6 @@ import com.jfinal.aop.ClearLayer;
 import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 
-@Before(SessionInterceptor.class)
 public class LoginController extends Controller {
 
 	/**
@@ -26,9 +23,7 @@ public class LoginController extends Controller {
 	@ActionKey("signin")
 	public void signin() {
 		String url = getPara(0);
-
 		setAttr("from", url);
-		renderFreeMarker("/WEB-INF/views/signin.html");
 	}
 
 	/**
@@ -37,19 +32,15 @@ public class LoginController extends Controller {
 	@ClearInterceptor(ClearLayer.ALL)
 	@ActionKey("login")
 	public void login() {
-		String from = getPara(0);
-		User user = getModel(User.class);
-		User dbUser = User.dao.findFirst("select * from user where username = ?", user.getStr(User.USERNAME));
-
-		if (dbUser != null && dbUser.getStr(User.PASSWORD).equals(user.getStr(User.PASSWORD))) {
-			setSessionAttr("sessionUser", dbUser);
-			try {
-				redirect(StringUtils.isBlank(from) ? "/" : URLDecoder.decode(from, "utf-8"));
-			} catch (UnsupportedEncodingException e) {
-				e.printStackTrace();
-			}
-		} else {
-			redirect("/signin");
+		Subject user = SecurityUtils.getSubject();
+		UsernamePasswordToken token = new UsernamePasswordToken(getPara("username"), getPara("password"));
+		token.setRememberMe(true);
+		try {
+			user.login(token);
+			redirect(WebUtils.getSavedRequest(getRequest()).getRequestUrl()); // 跳回到登录前的页面
+		} catch (Exception e) {
+			token.clear();
+			redirect("/singin");
 		}
 	}
 
@@ -58,10 +49,8 @@ public class LoginController extends Controller {
 	 */
 	@ActionKey("signout")
 	public void loginout() {
-		Enumeration<String> names = getSession().getAttributeNames();
-		while (names.hasMoreElements()) {
-			removeSessionAttr(names.nextElement());
-		}
+		Subject currentUser = SecurityUtils.getSubject();
+		currentUser.logout();
 		redirect("/signin");
 	}
 
@@ -71,12 +60,10 @@ public class LoginController extends Controller {
 	@ActionKey("signup")
 	@ClearInterceptor(ClearLayer.ALL)
 	public void signup() {
-		renderFreeMarker("/WEB-INF/views/signup.html");
 	}
 
 	@Before(LoginValidator.class)
 	@ActionKey("register")
-	@ClearInterceptor(ClearLayer.ALL)
 	public void regediter() {
 		User user = getModel(User.class);
 		if (User.dao.findFirst("select * from user where username = ?", user.getStr("username")) != null) {
