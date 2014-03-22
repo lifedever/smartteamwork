@@ -7975,3 +7975,369 @@ Caused by: java.io.FileNotFoundException: /WEB-INF/views/login/layout/header.jsp
 	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:115)
 	at com.jfinal.render.JspRender.render(JspRender.java:56)
 	... 39 more
+
+2014-03-22 22:05:54
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:06:10
+[WARN]-[Thread: qtp10288833-31]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /333/
+
+2014-03-22 22:12:35
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:12:52
+[WARN]-[Thread: qtp10288833-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:14:12
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:14:23
+[WARN]-[Thread: qtp10288833-32]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:16:51
+[WARN]-[Thread: qtp10288833-32]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:16:58
+[ERROR]-[Thread: qtp10288833-30]-[com.jfinal.core.ActionHandler.handle()]: /login/
+org.apache.shiro.authz.UnauthenticatedException: This subject is anonymous - it does not have any identifying principals and authorization operations require an identity to check against.  A Subject instance will acquire these identifying principals automatically after a successful login is performed be executing org.apache.shiro.subject.Subject.login(AuthenticationToken) or when 'Remember Me' functionality is enabled by the SecurityManager.  This exception can also occur when a previously logged-in Subject has logged out which makes it anonymous again.  Because an identity is currently not known due to any of these conditions, authorization is denied.
+	at org.apache.shiro.subject.support.DelegatingSubject.assertAuthzCheckPossible(DelegatingSubject.java:199)
+	at org.apache.shiro.subject.support.DelegatingSubject.checkRole(DelegatingSubject.java:240)
+	at net.wincn.controller.LoginController.login(LoginController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:24)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-22 22:17:21
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:17:31
+[ERROR]-[Thread: qtp18433730-31]-[com.jfinal.core.ActionHandler.handle()]: /login/
+org.apache.shiro.authz.UnauthenticatedException: This subject is anonymous - it does not have any identifying principals and authorization operations require an identity to check against.  A Subject instance will acquire these identifying principals automatically after a successful login is performed be executing org.apache.shiro.subject.Subject.login(AuthenticationToken) or when 'Remember Me' functionality is enabled by the SecurityManager.  This exception can also occur when a previously logged-in Subject has logged out which makes it anonymous again.  Because an identity is currently not known due to any of these conditions, authorization is denied.
+	at org.apache.shiro.subject.support.DelegatingSubject.assertAuthzCheckPossible(DelegatingSubject.java:199)
+	at org.apache.shiro.subject.support.DelegatingSubject.checkRole(DelegatingSubject.java:240)
+	at net.wincn.controller.LoginController.login(LoginController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:24)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-22 22:17:47
+[ERROR]-[Thread: qtp18433730-31]-[com.jfinal.core.ActionHandler.handle()]: /login/
+org.apache.shiro.authz.UnauthenticatedException: This subject is anonymous - it does not have any identifying principals and authorization operations require an identity to check against.  A Subject instance will acquire these identifying principals automatically after a successful login is performed be executing org.apache.shiro.subject.Subject.login(AuthenticationToken) or when 'Remember Me' functionality is enabled by the SecurityManager.  This exception can also occur when a previously logged-in Subject has logged out which makes it anonymous again.  Because an identity is currently not known due to any of these conditions, authorization is denied.
+	at org.apache.shiro.subject.support.DelegatingSubject.assertAuthzCheckPossible(DelegatingSubject.java:199)
+	at org.apache.shiro.subject.support.DelegatingSubject.checkRole(DelegatingSubject.java:240)
+	at net.wincn.controller.LoginController.login(LoginController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at net.wincn.handler.SmartHandler.handle(SmartHandler.java:24)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1331)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:477)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+
+2014-03-22 22:21:31
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:22:32
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:22:51
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add
+
+2014-03-22 22:23:05
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add
+
+2014-03-22 22:23:21
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:27:30
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:27:32
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:27:44
+[WARN]-[Thread: qtp18433730-29]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:28:18
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:28:28
+[WARN]-[Thread: qtp18433730-33]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:28:46
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:28:58
+[WARN]-[Thread: qtp10288833-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add
+
+2014-03-22 22:29:20
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:29:35
+[WARN]-[Thread: qtp10288833-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:30:00
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:30:11
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 22:41:50
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:42:39
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:43:14
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 22:43:31
+[WARN]-[Thread: qtp10288833-32]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add
+
+2014-03-22 22:43:41
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:03:34
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:03:45
+[WARN]-[Thread: qtp10288833-34]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:22:08
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:22:08
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'team.user' doesn't exist
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'team.user' doesn't exist
+	at com.jfinal.plugin.activerecord.TableInfoBuilder.buildTableInfo(TableInfoBuilder.java:49)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:118)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:102)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:747)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'team.user' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4074)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4006)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2468)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2629)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2713)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2663)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1599)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+	at com.jfinal.plugin.activerecord.TableInfoBuilder.doBuildTableInfo(TableInfoBuilder.java:61)
+	at com.jfinal.plugin.activerecord.TableInfoBuilder.buildTableInfo(TableInfoBuilder.java:44)
+	... 17 more
+
+2014-03-22 23:22:38
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:24:26
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:34:51
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:35:08
+[WARN]-[Thread: qtp10288833-29]-[com.jfinal.core.ActionHandler.handle()]: 401 Unauthorized: /project/
+
+2014-03-22 23:35:41
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:35:56
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add
+
+2014-03-22 23:36:30
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:37:16
+[WARN]-[Thread: qtp18433730-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:37:19
+[WARN]-[Thread: qtp18433730-33]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:37:28
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:37:47
+[WARN]-[Thread: qtp18433730-30]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:37:55
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:38:41
+[WARN]-[Thread: qtp18433730-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/
+
+2014-03-22 23:49:30
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:49:45
+[WARN]-[Thread: qtp10288833-34]-[com.jfinal.core.ActionHandler.handle()]: 401 Unauthorized: /project/
+
+2014-03-22 23:50:24
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:50:51
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:51:21
+[WARN]-[Thread: qtp10288833-32]-[com.jfinal.core.ActionHandler.handle()]: 401 Unauthorized: /project/
+
+2014-03-22 23:52:38
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:53:58
+[WARN]-[Thread: qtp18433730-31]-[com.jfinal.core.ActionHandler.handle()]: 401 Unauthorized: /project/
+
+2014-03-22 23:54:29
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:54:53
+[WARN]-[Thread: qtp18433730-33]-[com.jfinal.core.ActionHandler.handle()]: 401 Unauthorized: /project/
+
+2014-03-22 23:55:29
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:56:27
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-22 23:56:50
+[WARN]-[Thread: qtp10288833-31]-[com.jfinal.core.ActionHandler.handle()]: 403 Forbidden: /project/add

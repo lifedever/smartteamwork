@@ -1,6 +1,7 @@
 package net.wincn.config;
 
 import net.wincn.handler.SmartHandler;
+import net.wincn.model.Role;
 import net.wincn.model.User;
 import net.wincn.route.FrontRoute;
 import net.wincn.route.UserRoute;
@@ -41,14 +42,14 @@ public class SmartConfig extends JFinalConfig {
 		me.setViewType(ViewType.JSP);
 		me.setBaseViewPath("/WEB-INF/views/");
 		me.setBaseViewPath("/WEB-INF/views");
-		me.setError404View("/404.html");
-		me.setError500View("/500.html");
+		me.setError404View("/404.jsp");
+		me.setError500View("/500.jsp");
 
 		/**
 		 * 设置未授权
 		 */
-		me.setErrorView(401, "WEB-INF/views/signin.html");
-		me.setErrorView(403, "/signin");
+		me.setErrorView(401, "/unauthorized.jsp");
+		me.setErrorView(403, "/forbid.jsp");
 
 		// 开启debug模式
 		me.setDevMode(true);
@@ -91,7 +92,8 @@ public class SmartConfig extends JFinalConfig {
 		}
 		me.add(arp);
 		// 添加model
-		arp.addMapping("user", User.class);
+		arp.addMapping("users", User.class);
+		arp.addMapping("roles", Role.class);
 	}
 
 	@Override

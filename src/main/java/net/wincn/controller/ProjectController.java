@@ -1,10 +1,15 @@
 package net.wincn.controller;
 
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+
 import com.jfinal.core.Controller;
 
 /**
- * Created by gefangshuai on 2014-03-20-0020.
+ * 
+ * @author gefangshuai
+ * @createDate 2014年3月22日 下午10:24:37
  */
+@RequiresPermissions("project")
 public class ProjectController extends Controller {
 	public void index() {
 

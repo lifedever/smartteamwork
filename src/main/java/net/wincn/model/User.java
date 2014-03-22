@@ -1,5 +1,7 @@
 package net.wincn.model;
 
+import java.util.List;
+
 import com.jfinal.plugin.activerecord.Model;
 
 /**
@@ -17,6 +19,11 @@ public class User extends Model<User> {
 	public static final String PASSWORD = "password";
 
 	public static User findUserByUsername(String username) {
-		return dao.findFirst("select * from user where username = ?", username);
+		return dao.findFirst("select * from users where username = ?", username);
+	}
+
+	public List<Role> getRoles() {
+		return Role.dao.find("select r.* from roles r join user_roles ur on r.id = ur.role_id where ur.user_id = ?",
+				get("id"));
 	}
 }
