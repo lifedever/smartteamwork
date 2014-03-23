@@ -2,9 +2,9 @@ package net.wincn.config;
 
 import net.wincn.model.Role;
 import net.wincn.model.User;
-import net.wincn.route.FrontRoute;
-import net.wincn.route.UserRoute;
+import net.wincn.route.SmartRoutes;
 import net.wincn.support.handler.SmartHandler;
+import net.wincn.support.interceptor.NavInterceptor;
 
 import org.apache.log4j.Logger;
 
@@ -68,8 +68,8 @@ public class SmartConfig extends JFinalConfig {
 	@Override
 	public void configRoute(Routes me) {
 		this.routes = me;
-		me.add(new FrontRoute());
-		me.add(new UserRoute());
+		me.add(new SmartRoutes());
+
 	}
 
 	@Override
@@ -99,6 +99,7 @@ public class SmartConfig extends JFinalConfig {
 	@Override
 	public void configInterceptor(Interceptors me) {
 		me.add(new ShiroInterceptor());
+		me.add(new NavInterceptor());
 
 	}
 

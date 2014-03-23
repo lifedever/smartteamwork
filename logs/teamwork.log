@@ -9030,3 +9030,21 @@ The method findUserByUsername(String) in the type User is not applicable for the
 	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:115)
 	at com.jfinal.render.JspRender.render(JspRender.java:56)
 	... 39 more
+
+2014-03-23 07:29:25
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 07:35:59
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 07:58:22
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 08:00:38
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 08:56:21
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 08:57:13
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
