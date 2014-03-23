@@ -11,11 +11,12 @@ import com.jfinal.core.ActionInvocation;
  * @author gefangshuai
  * @createDate 2014年3月23日 上午7:34:47
  */
-public class NavInterceptor implements Interceptor {
+public class SmartInterceptor implements Interceptor {
 
 	@Override
 	public void intercept(ActionInvocation ai) {
 		String nav = getNavByControllerKey(ai.getControllerKey());
+		// 设置导航
 		if (nav != null)
 			ai.getController().setAttr("nav", nav);
 		ai.invoke();

@@ -8,7 +8,7 @@
 				<h1 class="text-center margin30-b">
 					${siteTitle}
 				</h1>
-				<form role="form" method="post" action="/login/${from}">
+				<form role="form" method="post" action="/login">
 					<legend>
 						<span class="glyphicon glyphicon-user"></span> 用户登录</legend>
 					<div class="form-group">
@@ -17,11 +17,11 @@
 					<div class="form-group">
 						<input type="password" class="form-control" id="password" name="password" placeholder="输入密码">
 					</div>
-					<button type="submit" class="btn btn-primary btn-block form-control">登录</button>
+					<button type="submit" class="btn btn-primary btn-block form-control" id="btnLogin">登录</button>
 
 					<div class="checkbox pull-left">
 						<label> 
-							<input type="checkbox" name="rememberMe"> 记住我
+							<input type="checkbox" name="rememberMe" id="rememberMe"> 记住我
 						</label>
 					</div>
 					<div class=" pull-right margin10-t">
@@ -32,3 +32,20 @@
 		</div>
 	</jsp:body>
 </layout:container>
+<layout:js>
+<script type="text/javascript">
+(function(){
+	$('form').ajaxForm({
+		dataType:'json',
+		success:function(data){
+			console.log(data);
+			if(data.result == 'true'){
+				location.href=data.url;
+			}else{
+				alert('登录失败！');
+			}
+		}
+	});
+})();
+</script>
+</layout:js>

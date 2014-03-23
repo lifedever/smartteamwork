@@ -2,7 +2,7 @@ package net.wincn.config;
 
 import net.wincn.route.SmartRoutes;
 import net.wincn.support.handler.SmartHandler;
-import net.wincn.support.interceptor.NavInterceptor;
+import net.wincn.support.interceptor.SmartInterceptor;
 
 import org.apache.log4j.Logger;
 
@@ -87,7 +87,7 @@ public class SmartConfig extends JFinalConfig {
 	@Override
 	public void configInterceptor(Interceptors me) {
 		me.add(new ShiroInterceptor());
-		me.add(new NavInterceptor());
+		me.add(new SmartInterceptor());
 
 	}
 

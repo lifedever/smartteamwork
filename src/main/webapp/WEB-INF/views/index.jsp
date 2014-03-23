@@ -13,3 +13,4 @@
 		</div>
 	</jsp:body>
 </layout:container>
+<layout:js></layout:js>
