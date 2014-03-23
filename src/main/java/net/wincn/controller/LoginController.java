@@ -34,7 +34,8 @@ public class LoginController extends Controller {
 	public void login() {
 		Subject user = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(getPara("username"), getPara("password"));
-		token.setRememberMe(true);
+		if ("on".equals(getPara("rememberMe")))
+			token.setRememberMe(true);	//记住我
 		try {
 			user.login(token);
 			redirect(WebUtils.getSavedRequest(getRequest()).getRequestUrl()); // 跳回到登录前的页面

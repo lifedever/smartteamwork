@@ -2,6 +2,7 @@ package net.wincn.model;
 
 import java.util.List;
 
+import com.jfinal.ext.plugin.tablebind.TableBind;
 import com.jfinal.plugin.activerecord.Model;
 
 /**
@@ -10,6 +11,7 @@ import com.jfinal.plugin.activerecord.Model;
  * @author gefangshuai
  * @createDate 2014年3月20日 下午1:50:52
  */
+@TableBind(tableName = "users", pkName = "id")
 public class User extends Model<User> {
 
 	private static final long serialVersionUID = -6114272070879297089L;

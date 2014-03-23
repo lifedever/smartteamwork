@@ -6,7 +6,7 @@
 
 <%@ attribute name="nav" type="java.lang.String"%>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -22,7 +22,7 @@
 				<li <c:if test="${nav eq 'index' }"> class="active"</c:if> >
 					<a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a>
 				</li>
-				<li <c:if test="${nav eq 'project' }"> class="active"</c:if> ><a href="/project/">项目管理</a></li>
+				<li <c:if test="${nav eq 'project' }"> class="active"</c:if> ><a href="/project/"><span class="glyphicon glyphicon-hdd"></span> 项目管理</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

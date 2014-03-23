@@ -22,7 +22,8 @@
 					<button type="submit" class="btn btn-primary btn-block form-control">登录</button>
 
 					<div class="checkbox pull-left">
-						<label> <input type="checkbox"> 记住密码
+						<label> 
+							<input type="checkbox" name="rememberMe"> 记住我
 						</label>
 					</div>
 					<div class=" pull-right margin10-t">

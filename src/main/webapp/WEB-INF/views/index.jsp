@@ -9,8 +9,8 @@
 			<h1>Smart Teamwork</h1>
 			<p>团队协作系统</p>
 			<p>
-				<a class="btn btn-primary btn-lg" href="/project/"> <span class="glyphicon glyphicon-hdd">
-					</span>项目管理
+				<a class="btn btn-primary btn-lg" href="/project/"> 
+				<span class="glyphicon glyphicon-hdd"></span> 项目管理
 				</a>
 			</p>
 		</div>

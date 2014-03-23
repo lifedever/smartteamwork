@@ -2,8 +2,10 @@ package net.wincn.model;
 
 import java.util.List;
 
+import com.jfinal.ext.plugin.tablebind.TableBind;
 import com.jfinal.plugin.activerecord.Model;
 
+@TableBind(tableName = "roles", pkName = "id")
 public class Role extends Model<Role> {
 	private static final long serialVersionUID = 1L;
 	public static final Role dao = new Role();

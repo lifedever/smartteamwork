@@ -7,4 +7,10 @@ smart Teamwork 团队协作系统
 * 任务管理
 * 进度跟踪
 
-build by jframe
+##See
+blog:[www.wincn.net](http://wincn.net "")
+
+github:[http://github.com/gefangshuai](http://github.com/gefangshuai "")
+
+##build 
+by jframe
