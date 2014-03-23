@@ -1,7 +1,7 @@
-body {
+/* body {
 	padding-top: 70px;
 }
-
+ */
 text.center {
 	text-align: center;
 }
@@ -25,6 +25,11 @@ text.center {
 
 .margin20-l {
 	margin-right: 20px;
+}
+
+.margin20-lr {
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .margin10-b {

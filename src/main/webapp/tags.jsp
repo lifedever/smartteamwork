@@ -5,3 +5,4 @@
 <%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags"%>
 <%@ taglib prefix="sec" tagdir="/WEB-INF/tags/sec" %>
 <%@ taglib prefix="smart" tagdir="/WEB-INF/tags/smart" %>
+<%@ taglib prefix="layout" tagdir="/WEB-INF/tags/layout" %>

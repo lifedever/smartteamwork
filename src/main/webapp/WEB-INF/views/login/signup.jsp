@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<jsp:include page="../layout/header.jsp"></jsp:include>
-<body>
-	<jsp:include page="../layout/nav.jsp"></jsp:include>
-	<div class="container">
+<%@include file="/tags.jsp"%>
+<layout:container>
+	<jsp:body>
 		<div class="row margin50-t">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
@@ -12,7 +9,8 @@
 					${siteTitle}
 				</h1>
 				<form role="form" method="post" action="/register">
-					<legend><span class="glyphicon glyphicon-user"></span> 用户注册</legend>
+					<legend>
+						<span class="glyphicon glyphicon-user"></span> 用户注册</legend>
 					<div class="form-group">
 						<input type="text" class="form-control" id="username" name="user.username" placeholder="输入用户名">
 					</div>
@@ -32,11 +30,7 @@
 						<a href="/signin">返回登录</a>
 					</div>
 				</form>
-
 			</div>
-
 		</div>
-		<jsp:include page="../layout/footer.jsp"></jsp:include>
-	</div>
-</body>
-</html>
+	</jsp:body>
+</layout:container>
