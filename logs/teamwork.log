@@ -9316,3 +9316,9 @@ The method put(String, Object, Object) in the type CacheKit is not applicable fo
 
 2014-03-23 09:10:59
 [WARN]-[Thread: qtp7634850-31]-[com.jfinal.plugin.ehcache.CacheKit.getOrAddCache()]: Could not find cache config [user], using default.
+
+2014-03-23 09:32:17
+[WARN]-[Thread: main]-[net.sf.ehcache.config.ConfigurationFactory.parseConfiguration()]: No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/repository/net/sf/ehcache/ehcache/2.8.1/ehcache-2.8.1.jar!/ehcache-failsafe.xml
+
+2014-03-23 09:32:36
+[WARN]-[Thread: qtp28524838-31]-[com.jfinal.plugin.ehcache.CacheKit.getOrAddCache()]: Could not find cache config [user], using default.
